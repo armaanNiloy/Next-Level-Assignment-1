@@ -70,3 +70,21 @@ class Student extends Person{
     }
 }
 
+// Problem 7
+
+function getIntersection(arr1: number[], arr2: number[]): number[] {
+    const x = new Set(arr1);
+    const y = new Set(arr2);
+    const result : number[] = [];
+    x.forEach((value) =>{
+        if(y.has(value)){
+            result.push(value);
+        }
+    })
+    return result;
+    
+    
+}
+
+
+
