@@ -35,5 +35,16 @@ function getProperty<T>(obj: T, key: keyof T) {
 
 // Problem 5
 
+interface Book {
+  title: string;
+  author: string;
+  publishedYear: number;
+}
 
+function toggleReadStatus(params: Book) {
+  return {
+    ...params,
+    isRead: true,
+  };
+}
 
