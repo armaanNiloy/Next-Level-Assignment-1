@@ -25,16 +25,17 @@ function checkType(input : StringOrNumber){
     if(typeof input === 'string')
         return "String"
     else if(typeof input == "number")
-        return "number";
+        return "Number";
 }
+
 
 // Problem 4
 
-const user = { id: 1, name: "John Doe", age: 21 };
 
 function getProperty<T>(obj: T, key: keyof T) {
   return obj[key];
 }
+
 
 // Problem 5
 
@@ -50,6 +51,7 @@ function toggleReadStatus(params: Book) {
     isRead: true,
   };
 }
+
 
 // Problem 6
 
@@ -73,6 +75,8 @@ class Student extends Person{
     }
 }
 
+
+
 // Problem 7
 
 function getIntersection(arr1: number[], arr2: number[]): number[] {
@@ -88,6 +92,4 @@ function getIntersection(arr1: number[], arr2: number[]): number[] {
     
     
 }
-
-
 
