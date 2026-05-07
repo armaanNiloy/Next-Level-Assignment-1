@@ -4,6 +4,9 @@ function filterEvenNumbers(num: number[]): number[]{
     return num.filter((value)=>value%2===0);
 }
 
+
+
+
 //problem 2
 
 function reverseString(input: string): string{
